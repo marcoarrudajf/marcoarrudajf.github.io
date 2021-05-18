@@ -450,7 +450,6 @@ padding: 10px;
         margin-top: 50px;
         padding: 50px;
         border-radius: 10px;
-        
         box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
        
         
@@ -655,3 +654,36 @@ padding: 10px;
     transform: translateY(0);
     opacity: 1;
 } */
+
+/* Configuração da pagina dois*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+.page-two{
+width: 500px;
+height: 250px;
+text-align: center;
+background:  rgba(255, 255, 255, 0.1);
+margin-top:20%;
+margin-left:40%;
+padding: 10px 20px;
+display: block;
+align-items: center;
+box-shadow: 0 5px 25px rgba(1 1 1 / 95%);
+transition: transform 0.1s ease-in-out;
+}
+.page-two:hover{
+ transform: translateY(-20px);
+    
+}
+.page-two h1{
+ font-size: 3em;
+}
+.page-two a.btn{
+    margin-bottom: 15%;
+}
