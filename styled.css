@@ -104,7 +104,6 @@ overflow: hidden;
 .media-icons{
     margin-top:30px;
     
-    
 }
 
 .media-icons a{
@@ -451,7 +450,6 @@ padding: 10px;
         padding: 50px;
         border-radius: 10px;
         box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
-       
         
     }
     
@@ -516,7 +514,8 @@ padding: 10px;
         font-weight: 600;
         text-decoration: none;
     }
-@media(max-width:1040px){
+    
+@media(max-width:1290px){
     header{
     padding: 12px 20px;
    }
