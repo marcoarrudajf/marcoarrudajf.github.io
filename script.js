@@ -1,13 +1,15 @@
-
+//pagina 2
 var contar = 1;
-setInterval(function(){
+setInterval(function () {
 document.getElementById('radio' + contar).checked = true;
 contar++;
-if(contar > 5){
-    contar=1;
-}
-},3000);
+if (contar > 5) {
+     contar = 1;
+    }
+}, 3000);
 
+
+//pagina 1
 //javascript para navegação bar efeito scroll
 window.addEventListener("scroll", function () {
     const header = document.querySelector("header");
