@@ -14,17 +14,16 @@
     width: 1600px;
     height: 80vh;
     position: relative;
-    background: #fff;
-   
+    background: #fff; 
 }
+
 .principal h1{
     width: 100%;
     text-align: center;
     position: absolute;
     text-transform: uppercase;
     font-size: 2em;
-    margin-top: 55px;
-   
+    margin-top: 55px;  
 }
 
 #btn-voltar{
@@ -40,12 +39,12 @@
     text-align: center;
     cursor: pointer;
 }
+
 #btn-voltar:hover{
     transform: translateY(-20px);
-    background: #3a9cf4;
-
-   
+    background: #3a9cf4; 
 }
+
 #btn-voltar a{
    
     text-decoration: none;
@@ -56,10 +55,11 @@
     letter-spacing: 2px;
     font-weight: 700;
 }
+
 #btn-voltar a:hover{
-    color: #3a6cf4;
-    
+    color: #3a6cf4;    
 }
+
 .slider{
    left: 10%;
    top: 25%;
@@ -68,28 +68,27 @@
    height: 300px;
    border-radius: 10px;
    overflow: hidden;
-
 }
+
 .slides{
     width: 500%;
     height: 500px;
-    display: flex; /*observação*/
-    
+    display: flex; /*observação*/   
 }
 
 .slides input{
-    display: none;
-    
+    display: none;   
 }
+
 .slide{
     width: 20%;
     transition: 2s;
 }
 
+
 .slide img {
     width: 1300px;
-    height: 300px;
-    
+    height: 300px;   
 }
 
 .navigation-manual{
@@ -97,8 +96,7 @@
     width: 1300px;
     margin-top: -250px;
     display: flex;
-   justify-content: center;
-   
+    justify-content: center;  
 }
 
 .manual-btn{
@@ -110,26 +108,30 @@
 }
 
 .manual-btn:not(:last-child){
-    margin-right: 20px;
-    
+    margin-right: 20px;    
 }
 
 .manual-btn:hover{
     background-color: #40d3dc;
     transition: .2s;
 }
+
 #radio1:checked ~ .first {
     margin-left: 0;
 }
+
 #radio2:checked ~ .first {
     margin-left: -20%;
 }
+
 #radio3:checked ~ .first {
     margin-left: -40%;
 }
+
 #radio4:checked ~ .first {
     margin-left: -60%;
 }
+
 #radio5:checked ~ .first {
     margin-left: -80%;
 }  
@@ -139,8 +141,7 @@
     display: flex;
     width: 1300px;
     justify-content: center;
-    margin-top: 250px;
-    
+    margin-top: 250px;   
 }
 
 .navigation-auto div{
@@ -153,6 +154,7 @@
 .navigation-auto div:not(:last-child){
     margin-right: 20px;
 }
+
 #radio1:checked ~.navigation-auto .auto-btn1{
     background-color: #40d3dc;
 }
