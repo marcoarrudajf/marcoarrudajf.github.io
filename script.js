@@ -1,11 +1,15 @@
 //pagina 2
 var contar = 1;
 setInterval(function () {
-document.getElementById('radio' + contar).checked = true;
+var pos = document.getElementById('radio' + contar);
+
+if(!pos) return;
+
+pos.checked = true;
 contar++;
 if (contar > 5) {
-     contar = 1;
-    }
+         contar = 1;
+        }
 }, 3000);
 
 
@@ -22,10 +26,12 @@ const menuBtn = document.querySelector(".menu-btn");
 const navigation = document.querySelector(".navigation");
 const navigationItems = document.querySelectorAll(".navigation")
 
-menuBtn.addEventListener("click", () => {
-    menuBtn.classList.toggle("active");
-    navigation.classList.toggle("active");
-});
+if(menuBtn){
+    menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+    });
+}
 navigationItems.forEach((navigationItem) => {
     navigationItem.addEventListener("click", () => {
         menuBtn.classList.remove("active");
@@ -40,10 +46,12 @@ window.addEventListener("scroll", function () {
 });
 
 //Javascript para voltar ao topo da pagina.
-scrollBtn.addEventListener("click", () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-});
+if(scrollBtn){
+    scrollBtn.addEventListener("click", () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+}
 
 
 //Javascript para reveal website elements on scroll
