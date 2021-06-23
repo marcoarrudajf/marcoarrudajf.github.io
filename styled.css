@@ -63,14 +63,20 @@ section{
 0%{
     margin-top: 0;
     }
-15%{
+10%{
     margin-top: -70px;
     }
-30%{
+20%{
     margin-top: -140px;
     }
-45%{
+30%{
     margin-top: -210px;
+    }
+40%{
+    margin-top: -280px;
+    }
+50%{
+    margin-top: -355px;
     }
 60%{
     margin-top: -280px;
