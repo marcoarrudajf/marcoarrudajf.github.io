@@ -42,24 +42,22 @@
 }
 
 #btn-voltar:hover{
-    transform: translateY(-20px);
+   
     background: #3a9cf4; 
 }
 
 #btn-voltar a{
-   
+ 
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 2em;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
 }
 
-#btn-voltar a:hover{
-    color: #3a6cf4;    
-}
+
 
 .slider{
    left: 10%;
