@@ -56,35 +56,47 @@ section{
 }
 
 .animation-text h3:nth-child(1){
-    animation: text-move 10s infinite;
+    animation: text-move 15s infinite;
 
 }
 @keyframes text-move{
 0%{
     margin-top: 0;
     }
-10%{
+7%{
     margin-top: -70px;
     }
-20%{
+14%{
     margin-top: -140px;
     }
-30%{
+21%{
     margin-top: -210px;
     }
-40%{
+28%{
     margin-top: -280px;
+    }
+35%{
+    margin-top: -340px;
+    }
+42.5%{
+    margin-top: -410px;
     }
 50%{
-    margin-top: -355px;
+    margin-top: -480px;
     }
-60%{
-    margin-top: -280px;
+57.5%{
+    margin-top: -410px;
+    }
+63%{
+    margin-top: -340px;
     }
 70%{
+    margin-top: -280px;
+    }
+77%{
     margin-top: -210px;
     }
-80%{
+83%{
     margin-top: -140px;
     }
 90%{
@@ -358,25 +370,29 @@ div .curriculo {
 
 .skills .content .col-right .bar .css:before{
     width: 55%;
-    background: #235bf6;
+    background: #2aa9e0;
 } 
 
 .skills .content .col-right .bar .javascript:before{
-    width: 25%;
-    background: #e3a324;
+    width: 40%;
+    background: #f7e018;
 }  
 
 .skills .content .col-right .bar .reactjs:before{
     width: 25%;
-    background: #30dd6d;
+    background:  #4ad5fe;
 }
 .skills .content .col-right .bar .mysql:before{
     width: 30%;
-    background: #8747ec;
+    background: #e48d00;
 }
 .skills .content .col-right .bar .github:before{
-    width: 40%;
-    background: #e8f800;
+    width: 60%;
+    background: #f05133;
+}
+.skills .content .col-right .bar .jquery:before{
+    width: 25%;
+    background: #0868ab;
 }
 
 .services .content{
