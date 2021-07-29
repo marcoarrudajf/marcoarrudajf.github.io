@@ -1,16 +1,3 @@
-//pagina 2
-var contar = 1;
-setInterval(function () {
-var pos = document.getElementById('radio' + contar);
-
-if(!pos) return;
-
-pos.checked = true;
-contar++;
-if (contar > 5) {
-         contar = 1;
-        }
-}, 3000);
 
 
 //pagina 1
@@ -53,22 +40,16 @@ if(scrollBtn){
     });
 }
 
+//pagina 2
+var contar = 1;
+setInterval(function () {
+var pos = document.getElementById('radio' + contar);
 
-//Javascript para reveal website elements on scroll
+if(!pos) return;
 
-// window.addEventListener("scroll", reveal);
-
-// function reveal() {
-//     var reveals = document.querySelectorAll(".reveal");
-
-//     for (var i = 0; i < reveals.length; i++); {
-
-//         var windowHeight = window.innerHeight;
-//         var revealTop = reveals[i].getBoundingClientReact().top;
-//         var revealPoint = 50;
-
-//         if (revealTop < windowHeight - revealPoint) {
-//             reveals[i].classList.add("active");
-//         }
-//     }
-// }
+pos.checked = true;
+contar++;
+if (contar > 5) {
+         contar = 1;
+        }
+}, 3000);

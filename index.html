@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="styled.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="shortcut icon" href="imgs/marco1.png" type="image/x-icon">
@@ -36,15 +37,16 @@
         <div class="content">
             <h2>Olá, eu sou<br><span>Marco Arruda</span></h2>
             <div class="animation-text">
-                <h3>Estudante</h3>
+                <h3>Git e GitHub</h3>
                 <h3>JavaScript</h3>
                 <h3>HTML5</h3>
                 <h3>CSS3</h3>
                 <h3>ReactJs</h3>
                 <h3>MySql</h3>
+                <h3>JQuery</h3>
                 <h3>Web Developer</h3>
             </div>
-            <a href="#about" class="btn">Veja meu currículo</a>
+            <a href="#curriculo" class="btn">Veja meu currículo</a>
             <div class="media-icons">
                 <a href="#"><i class="fab fa-facebook" target="_blank"></i></a>
                 <a href="https://www.instagram.com/marcoarrudajf/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -67,18 +69,21 @@
             </div>
             <div class="column col-right reveal">
                 <h2 class="content-title">Olá, eu sou Marco Arruda</h2>
-                <p class="paragrafo-text">Tenho 47 anos e busco oportunidade para ingressar no mundo dos
+                <p class="paragrafo-text" id="curriculo">Tenho 47 anos e busco oportunidade para ingressar no mundo dos
                     desenvolvedores, no momento sou estudante de JS, CSS3, HTML5 e ReactJS.<br>Sou casado com
                     <strong>Esterlane Arruda</strong> , tenho três filhos: Filipe, Adriel e Jaqueline:
                     <strong>Filipe Jessé</strong> recém formado em Sistema de Informação e fazendo mestrado na área,
                     <strong>Adriel</strong> cursando Engenharia Mecatrônica 6º período e, <strong>Jaqueline</strong>
                     recém formada em Educação Física.<br> Sou Técnico em Eletricidade Predial e industrial, tenho vários
-                    cursos no setor de segurança eletrônica, recentemente fiz os cursos de Algoritmos, HTML5, CSS3, Java Script, ReactJS, gitHub, Devops e, Reuniões Produtivas, fui garçon, camelô, motorista profissional, pastor e empresário.<br>Meu objetivo agora é ser programador Front-End e Back-End.
+                    cursos no setor de segurança eletrônica, recentemente fiz os cursos de Algoritmos, HTML5, CSS3, Java
+                    Script, ReactJS, gitHub, Devops e, Reuniões Produtivas, fui garçon, camelô, motorista profissional,
+                    pastor e empresário.<br>Meu objetivo agora é ser programador Front-End e Back-End.
                 </p>
-                <a href="index-pag2.html" class="btn">Veja Mais</a>
+                <!-- <a href="index-pag2.html" class="btn">Veja Mais</a> -->
                 <a href="index-pag3.html" class="btn" target="_blank">Abrir Currículo</a>
-                
-                <object class="curriculo" data="doc/Marco-Curriculo-20210623.pdf" type="application/pdf" width="100%" height="200">
+
+                <object class="curriculo" data="doc/Marco-Curriculo-20210623.pdf" type="application/pdf" width="100%"
+                    height="200">
                     <p>Seu navegador não tem um plugin pra PDF</p>
                 </object>
             </div>
@@ -92,7 +97,11 @@
         <div class="content">
             <div class="column col-left reveal">
                 <h2 class="content-title">Minhas Habilidades e Experiências</h2>
-                <p>Bom, gostaria de dizer neste post, que sou expert em programação, um full-Stack de respeito no mercado, Não sou. Ainda!<br> Todos nascemos bebês, sem noção do mundo, hoje somos adultos profissionais e evoluídos, me sinto um bebê na programação, mas disposto a crescer e me tornar um grande profissional na área.<br> Tenho muita disposição e garra, estou pronto para encarar meus desafios, e mostrar o que sou capaz de fazer, e aprender. </p>
+                <p>Bom, gostaria de dizer neste post, que sou expert em programação, um full-Stack de respeito no
+                    mercado, Não sou. Ainda!<br> Todos nascemos bebês, sem noção do mundo, hoje somos adultos
+                    profissionais e evoluídos, me sinto um bebê na programação, mas disposto a crescer e me tornar um
+                    grande profissional na área.<br> Tenho muita disposição e garra, estou pronto para encarar meus
+                    desafios, e mostrar o que sou capaz de fazer, e aprender. </p>
                 <a href="#services" class="btn">Veja Mais</a>
             </div>
             <div class="column col-right reveal">
@@ -114,7 +123,7 @@
                 <div class="bar">
                     <div class="info">
                         <span>JavaScript</span>
-                        <span>25%</span>
+                        <span>40%</span>
                     </div>
                     <div class="line javascript"></div>
                 </div>
@@ -136,9 +145,16 @@
                 <div class="bar">
                     <div class="info">
                         <span>Git e GitHub</span>
-                        <span>40%</span>
+                        <span>60%</span>
                     </div>
                     <div class="line github"></div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>JQuery</span>
+                        <span>25%</span>
+                    </div>
+                    <div class="line jquery"></div>
                 </div>
             </div>
         </div>
@@ -148,7 +164,8 @@
     <section class="services" id="services">
         <div class="title reveal">
             <h2 class="section-title">Minhas Experiências</h2>
-            <p>Treinamento feito em aulas online, com supervisão de amigos, tabalhos realizados para testar meus conhecimentos, criação e cópias alguns de sites em HTML e CSS3.</p>
+            <p>Treinamento feito em aulas online, com supervisão de amigos, tabalhos realizados para testar meus
+                conhecimentos, criação e cópias alguns de sites em HTML e CSS3.</p>
         </div>
         <div class="content">
             <div class="card reveal">
@@ -157,7 +174,8 @@
                 </div>
                 <div class="info">
                     <h3>CSS3</h3>
-                    <p>Curso básico e intermediário de CSS3, aulas online realizadas por Curso Em Vídeo e CFBCursos, treinamento acompanhado com supervisão de pessoas da área.
+                    <p>Curso básico e intermediário de CSS3, aulas online realizadas por Curso Em Vídeo e CFBCursos,
+                        treinamento acompanhado com supervisão de pessoas da área.
                     </p>
                 </div>
             </div>
@@ -167,7 +185,8 @@
                 </div>
                 <div class="info">
                     <h3>HTML5</h3>
-                    <p>Curso básico  e intermediário de Html5,  aulas online realizadas por Curso Em Vídeo, CFBCursos e outras vídeo aulas avulsas, treinamento acompanhado com supervisão de pessoas da área.
+                    <p>Curso básico e intermediário de Html5, aulas online realizadas por Curso Em Vídeo, CFBCursos e
+                        outras vídeo aulas avulsas, treinamento acompanhado com supervisão de pessoas da área.
                     </p>
                 </div>
             </div>
@@ -177,7 +196,8 @@
                 </div>
                 <div class="info">
                     <h3>JavaScript</h3>
-                    <p>Curso básico de JavaScript, Curso em Vídeo, CFBCursos aulas online e treinamento acompanhado com supervisão de pessoas da
+                    <p>Curso básico de JavaScript, Curso em Vídeo, CFBCursos aulas online e treinamento acompanhado com
+                        supervisão de pessoas da
                         área.</p>
                 </div>
             </div>
@@ -187,7 +207,8 @@
                 </div>
                 <div class="info">
                     <h3>ReactJS</h3>
-                    <p>Curso de ReactJs, aulas online no CFBCursos e treinamento acompanhado com supervisão de pessoas de
+                    <p>Curso de ReactJs, aulas online no CFBCursos e treinamento acompanhado com supervisão de pessoas
+                        de
                         pessoas que trabalha com essa linguagem.</p>
                 </div>
             </div>
@@ -197,7 +218,8 @@
                 </div>
                 <div class="info">
                     <h3>MySql</h3>
-                    <p>Curso MySQL, aulas online no Curso em Video, buscando oportunidade de treinar em banco de dados</p>
+                    <p>Curso MySQL, aulas online no Curso em Video, buscando oportunidade de treinar em banco de dados
+                    </p>
                 </div>
             </div>
             <div class="card reveal">
@@ -207,6 +229,17 @@
                 <div class="info">
                     <h3>Git e GitHub</h3>
                     <p>Curso Git e GiHub, aulas online no Curso em Video, Treinamento diários</p>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="info">
+                    <h3>JQuery</h3>
+                    <p>Curso básico  de jquery, aulas online realizadas no período de 30 horas,
+                        treinamento acompanhado com supervisão de pessoas da área.
+                    </p>
                 </div>
             </div>
         </div>
@@ -297,7 +330,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
 
                 <div class="contact-form reveal">
                     <h3>Envie Sua Mensagem</h3>
@@ -314,13 +347,14 @@
                         <input type="submit" class="send-btn">
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
     </section>
 
-    <footer class="footer"><span class="footer-title">Marco Arruda</span>
-        <p>Copyright @2021<a href="#"> Olho Vivo</a>. Todos Direitos Reservados</p>
+    <footer class="footer">
+        <p>Copyright @2021<a href="#"><em> Marco Arruda</p></em></a>.
+        <p>As informações podem sofrer alterações e atualizações a qualquer momento.</p>
     </footer>
     <script src="script.js" charset="utf-8"></script>
 
