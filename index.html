@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="styled.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="shortcut icon" href="imgs/marco1.png" type="image/x-icon">
@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- Primeira pagina, header, menus -->
     <div class="scrollToTop-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -25,7 +26,7 @@
             <a href="#main">Pagina Inicial</a>
             <a href="#about">Sobre Mim</a>
             <a href="#skills">Qualificações</a>
-            <a href="#services">Experiências</a>
+            <a href="#services">Tecnologias</a>
             <a href="#gallery">Galeria</a>
             <a href="#contact">Contatos</a>
         </div>
@@ -33,14 +34,15 @@
         <div></div>
     </header>
 
+    <!-- Primeira seção com slide carrossel na vertical, botões e links de navegação -->
     <section class="main" id="main">
         <div class="content">
             <h2>Olá, eu sou<br><span>Marco Arruda</span></h2>
             <div class="animation-text">
-                <h3>Git e GitHub</h3>
-                <h3>JavaScript</h3>
                 <h3>HTML5</h3>
                 <h3>CSS3</h3>
+                <h3>Git e GitHub</h3>
+                <h3>JavaScript</h3>
                 <h3>ReactJs</h3>
                 <h3>MySql</h3>
                 <h3>JQuery</h3>
@@ -56,6 +58,8 @@
         </div>
     </section>
 
+    <!-- Pagina sobre mim, com imagem, texto, botão e currículo em pdf -->
+
     <section class="about" id="about">
         <div class="title reveal">
             <h2 class="section-title">Sobre mim</h2>
@@ -70,7 +74,8 @@
             <div class="column col-right reveal">
                 <h2 class="content-title">Olá, eu sou Marco Arruda</h2>
                 <p class="paragrafo-text" id="curriculo">Tenho 47 anos e busco oportunidade para ingressar no mundo dos
-                    desenvolvedores, no momento sou estudante de JS, CSS3, HTML5 e ReactJS.<br>Sou casado com
+                    desenvolvedores, no momento sou estudante de JavaScript, CSS3, HTML5, ReactJS, MySQL, Git, GitHub e
+                    JQuery.<br>Sou casado com
                     <strong>Esterlane Arruda</strong> , tenho três filhos: Filipe, Adriel e Jaqueline:
                     <strong>Filipe Jessé</strong> recém formado em Sistema de Informação e fazendo mestrado na área,
                     <strong>Adriel</strong> cursando Engenharia Mecatrônica 6º período e, <strong>Jaqueline</strong>
@@ -82,13 +87,15 @@
                 <!-- <a href="index-pag2.html" class="btn">Veja Mais</a> -->
                 <a href="index-pag3.html" class="btn" target="_blank">Abrir Currículo</a>
 
-                <object class="curriculo" data="doc/Marco-Curriculo-20210623.pdf" type="application/pdf" width="100%"
+                <object class="curriculo" data="doc/marco-curriculo-20210801.pdf" type="application/pdf" width="100%"
                     height="200">
                     <p>Seu navegador não tem um plugin pra PDF</p>
                 </object>
             </div>
         </div>
     </section>
+
+    <!-- Pagina Minhas habilidades: contém texto e barra de experiencia conquistadas, um botão no momento sem função -->
 
     <section class="skills" id="skills">
         <div class="title reveal">
@@ -102,7 +109,7 @@
                     profissionais e evoluídos, me sinto um bebê na programação, mas disposto a crescer e me tornar um
                     grande profissional na área.<br> Tenho muita disposição e garra, estou pronto para encarar meus
                     desafios, e mostrar o que sou capaz de fazer, e aprender. </p>
-                <a href="#services" class="btn">Veja Mais</a>
+                <a href="#" class="btn">Veja Mais</a>
             </div>
             <div class="column col-right reveal">
                 <div class="bar">
@@ -118,6 +125,14 @@
                         <span>55%</span>
                     </div>
                     <div class="line css"></div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <span>Git e GitHub</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="line github"></div>
                 </div>
 
                 <div class="bar">
@@ -144,13 +159,6 @@
                 </div>
                 <div class="bar">
                     <div class="info">
-                        <span>Git e GitHub</span>
-                        <span>60%</span>
-                    </div>
-                    <div class="line github"></div>
-                </div>
-                <div class="bar">
-                    <div class="info">
                         <span>JQuery</span>
                         <span>25%</span>
                     </div>
@@ -159,91 +167,157 @@
             </div>
         </div>
 
+        <!-- Pagina quatro, contém um texto e divs com minhas experiencias alcançadas.
+        Tambem tem um slide carrossel agora na linha horizontal. -->
+
     </section>
 
     <section class="services" id="services">
         <div class="title reveal">
-            <h2 class="section-title">Minhas Experiências</h2>
-            <p>Treinamento feito em aulas online, com supervisão de amigos, tabalhos realizados para testar meus
-                conhecimentos, criação e cópias alguns de sites em HTML e CSS3.</p>
-        </div>
-        <div class="content">
-            <div class="card reveal">
-                <div class="service-icon">
-                    <i class="fab fa-css3"></i>
-                </div>
-                <div class="info">
-                    <h3>CSS3</h3>
-                    <p>Curso básico e intermediário de CSS3, aulas online realizadas por Curso Em Vídeo e CFBCursos,
-                        treinamento acompanhado com supervisão de pessoas da área.
-                    </p>
-                </div>
-            </div>
-            <div class="card reveal">
-                <div class="service-icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <div class="info">
-                    <h3>HTML5</h3>
-                    <p>Curso básico e intermediário de Html5, aulas online realizadas por Curso Em Vídeo, CFBCursos e
-                        outras vídeo aulas avulsas, treinamento acompanhado com supervisão de pessoas da área.
-                    </p>
-                </div>
-            </div>
-            <div class="card reveal">
-                <div class="service-icon">
-                    <i class="fab fa-js"></i>
-                </div>
-                <div class="info">
-                    <h3>JavaScript</h3>
-                    <p>Curso básico de JavaScript, Curso em Vídeo, CFBCursos aulas online e treinamento acompanhado com
-                        supervisão de pessoas da
-                        área.</p>
-                </div>
-            </div>
-            <div class="card reveal">
-                <div class="service-icon">
-                    <i class="fab fa-react"></i>
-                </div>
-                <div class="info">
-                    <h3>ReactJS</h3>
-                    <p>Curso de ReactJs, aulas online no CFBCursos e treinamento acompanhado com supervisão de pessoas
-                        de
-                        pessoas que trabalha com essa linguagem.</p>
-                </div>
-            </div>
-            <div class="card reveal">
-                <div class="service-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <div class="info">
-                    <h3>MySql</h3>
-                    <p>Curso MySQL, aulas online no Curso em Video, buscando oportunidade de treinar em banco de dados
-                    </p>
-                </div>
-            </div>
-            <div class="card reveal">
-                <div class="service-icon">
-                    <i class="fab fa-github"></i>
-                </div>
-                <div class="info">
-                    <h3>Git e GitHub</h3>
-                    <p>Curso Git e GiHub, aulas online no Curso em Video, Treinamento diários</p>
-                </div>
-            </div>
-            <div class="card reveal">
-                <div class="service-icon">
-                    <i class="fas fa-code"></i>
-                </div>
-                <div class="info">
-                    <h3>JQuery</h3>
-                    <p>Curso básico  de jquery, aulas online realizadas no período de 30 horas,
-                        treinamento acompanhado com supervisão de pessoas da área.
-                    </p>
-                </div>
-            </div>
+            <h2 class="section-title">Tecnologias</h2>
         </div>
     </section>
+
+    <section class="carrossel" id="radio">
+
+        <div class='slider'>
+            <div class='slides '>
+
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+                <input type="radio" name="radio-btn" id="radio7">
+
+                <div class="conteudo slide first">
+
+                    <!-- HTML -->
+                    <div class="card reveal slide">
+                        <div class="service-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="text">
+                            <h3>HTML5</h3>
+
+                            <p>Curso básico e intermediário de Html5, aulas online realizadas por Curso Em Vídeo,
+                                CFBCursos e outras vídeo aulas avulsas, treinamento acompanhado com supervisão de
+                                pessoas da área.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="card reveal slide first">
+                        <div class="service-icon ">
+                            <i class="fab fa-css3"></i>
+                        </div>
+                        <div class="text">
+                            <h3>CSS3</h3>
+                            <p>Curso básico e intermediário de CSS3, aulas online realizadas por Curso Em Vídeo e
+                                CFBCursos, treinamento acompanhado com supervisão de pessoas da área.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Git GitHub -->
+                    <div class="card reveal slide">
+                        <div class="service-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Git e GitHub</h3>
+                            <p>Curso Git e GiHub, aulas online no Curso em Video, Treinamento diários</p>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="card reveal slide">
+                        <div class="service-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="text">
+                            <h3>JavaScript</h3>
+                            <p>Curso básico de JavaScript, Curso em Vídeo, CFBCursos aulas online e treinamento
+                                acompanhado com supervisão de pessoas da
+                                área.</p>
+                        </div>
+                    </div>
+
+                    <!-- ReactJs -->
+                    <div class="card reveal slide">
+                        <div class="service-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="text">
+                            <h3>ReactJS</h3>
+                            <p>Curso de ReactJs, aulas online no CFBCursos e treinamento acompanhado com supervisão de
+                                pessoas de pessoas que trabalha com essa linguagem.</p>
+                        </div>
+                    </div>
+
+                    <!-- MYSql -->
+                    <div class="card reveal slide">
+                        <div class="service-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="text">
+                            <h3>MySql</h3>
+                            <p>Curso MySQL, aulas online no Curso em Video, buscando oportunidade de treinar em banco de
+                                dados
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- JQuery -->
+                    <div class="card reveal slide">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="text">
+                            <h3>JQuery</h3>
+                            <p>Curso básico de jquery, aulas online realizadas no período de 30 horas,
+                                treinamento acompanhado com supervisão de pessoas da área.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class='navigation-auto'>
+                    <div class='auto-btn1'></div>
+                    <div class='auto-btn2'></div>
+                    <div class='auto-btn3'></div>
+                    <div class='auto-btn4'></div>
+                    <div class='auto-btn5'></div>
+                    <div class='auto-btn6'></div>
+                    <div class='auto-btn7'></div>
+                </div>
+                <div class='navigation-manual'>
+                    <label for='radio1' class='manual-btn' onclick="setPos(1)"></label>
+                    <label for='radio2' class='manual-btn' onclick="setPos(2)"></label>
+                    <label for='radio3' class='manual-btn' onclick="setPos(3)"></label>
+                    <label for='radio4' class='manual-btn' onclick="setPos(4)"></label>
+                    <label for='radio5' class='manual-btn' onclick="setPos(5)"></label>
+                    <label for='radio6' class='manual-btn' onclick="setPos(6)"></label>
+                    <label for='radio7' class='manual-btn' onclick="setPos(7)"></label>
+                </div>
+            </div>
+
+        </div>
+        <span>
+            <h3>informações Importantes:</h3>
+            <p>Estas são as tecnologias que estou estudando e treinando no momento.</p>
+            <p>Treinamento feito em aulas online, com pesquisas e supervisão de amigos.</p>
+            <p>Comecei pelo HTML5, depois na sequência estudei CSS3, JavaScript, Git e GitHub, ReactjS, MySQL e JQuery.</p>
+            <p>Continuo firme estudando, buscando uma oportunidade para aperfeiçoar minhas técnicas em programação.</p>
+        </span>
+    </section>
+
+    <!--  Pagina 5: Algumas imagens como exemplo, estarei colocando aqui minha imagens futuras de programador -->
+
     <section class="work" id="gallery">
         <div class="title reveal">
             <h2 class="section-title">Exemplo de Galeria Futura</h2>
@@ -283,6 +357,8 @@
         <a href="#" class="btn">Veja Todos</a>
 
     </section>
+
+    <!-- Pagina seis: Meus contatos -->
 
     <section class="contact" id="contact">
         <div class="title reveal">
@@ -352,11 +428,15 @@
 
     </section>
 
+    <!-- Aqui finalizando com o rodapé -->
+
     <footer class="footer">
         <p>Copyright @2021<a href="#"><em> Marco Arruda</p></em></a>.
         <p>As informações podem sofrer alterações e atualizações a qualquer momento.</p>
     </footer>
+
     <script src="script.js" charset="utf-8"></script>
+
 
 </body>
 
