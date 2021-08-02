@@ -9,7 +9,7 @@
 }
 
 section{
-    padding: 100px 200px;
+    padding: 5% 10%;
 }
 
 .main{
@@ -33,15 +33,16 @@ section{
     font-size: 2em;
     font-weight: 500;
     overflow: hidden;
-
 }
 
 .main .content h2 span{
     font-size: 2em;
     font-weight: 600;
 }
+/* carrossel slide vertical */
 
 .animation-text{
+    margin-top: 50px;
     position: relative;
     height: 70px;
     overflow: hidden;
@@ -57,7 +58,6 @@ section{
 
 .animation-text h3:nth-child(1){
     animation: text-move 15s infinite;
-
 }
 @keyframes text-move{
 0%{
@@ -107,9 +107,11 @@ section{
     }
 }
 
+/* botão currículo */
+
 .btn{
     color:#fff;
-    background: #3a6cf4;  
+    background: #3a6cf4;
     font-size: 1.1em;
     font-weight: 600;
     display: inline-block;
@@ -120,25 +122,43 @@ section{
     border-radius: 2px;
     margin-top: 100px;
     transition: 0.3s ease;
-} 
-
-.btn:hover{
-    background: #3b02a3;
-
-  
 }
- 
+
+.btn:hover {
+    background: #3b02a3;
+}
+
+/* redes sociais icones */
+
 .media-icons{
-    margin-top:30px;
-    
+    margin-top:25px;
+    margin-left:15px;
 }
 
 .media-icons a{
     color:#fff;
     font-size: 40px;
     margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.media-icons a:hover:nth-child(1){
+    color: #3b5998;
+    font-size:45px;  
+}
+.media-icons a:hover:nth-child(2){
+    color: #fd5949;
+    font-size:45px;  
+}
+.media-icons a:hover:nth-child(3){
+    color: #333;
+    font-size:45px;  
+}
+.media-icons a:hover:nth-child(4){
+    color: #3366ff;
+    font-size:45px;  
 }
 
+/* header menu */
 header{
     z-index: 999;
     position: fixed;
@@ -151,12 +171,11 @@ header{
     justify-content: space-between;
     align-items: center;
     transition: 0.5s ease;
-
 }
 
 header.sticky{
-    background: #3a6cf4; 
-    padding: 10px 200px; 
+    background: #3a6cf4;
+    padding: 10px 200px;
 }
 
 header .brand{
@@ -165,12 +184,10 @@ header .brand{
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    
 }
 
 header .navigation{
     position: relative;
-    
 }
 
 header .navigation a{
@@ -183,7 +200,6 @@ header .navigation a{
 
 header .navigation a:hover{
     color:#3a6cf4;
-    
 }
 
 body{
@@ -194,13 +210,14 @@ header.sticky .navigation a:hover{
     color:#000;
 }
 
+/* título das paginas */
+
 .title{
     width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
+    
 }
 
 .section-title{
@@ -208,8 +225,8 @@ header.sticky .navigation a:hover{
     color:#3a6cf4;
     font-size: 2.2em;
     font-weight: 800;
-    margin-bottom: 60px;
     text-align: center;
+    
 }
 
 .section-title:before{
@@ -235,12 +252,15 @@ header.sticky .navigation a:hover{
     transform: translate(-50%);
 }
 
+/* sobre mim */
+
 .about .content{
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
+    align-items: center;
 }
 
 .about .content .col-left{
@@ -251,58 +271,71 @@ header.sticky .navigation a:hover{
 .about .content .col-right{
     position: relative;
     width: 50%;
-
 }
+
+/* imagem sobre mim */
 
 .about .content .col-left .img-card{
     position: relative;
     width: 100%;
-    min-height: 750px;
-
-} 
+    min-height: 100vh;
+    
+}
+.about .content .col-left img{
+    margin-top: 10%;
+}
 
 .about .content .col-left .img-card img{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 70%;
     object-fit: cover;
     border-radius: 10px;
 }
 
+/* texto sobre mim */
+
 .about .content .col-right .content-title{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 800;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .about .content .col-right .paragrafo-text{
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: justify;
+}
+
+/* botão abrir currículo  e pdf currículo*/
+
+.about .btn{
+ margin-top: 25px;
 }
 
 div .curriculo {
     display: block;
     border: none;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .curriculo-pag3{
     height: 100vh;
-    
 }
+
+
+/* minhas qualificações */
 
 .skills{
   
     background: #000;
- 
 }
 
 .skills .content{
     position: relative;
     width: 100%;
-    display: flex;  
+    display: flex;
     justify-content: space-between;
     color: #fff;
     margin-top: 20px;
@@ -323,6 +356,13 @@ div .curriculo {
     position: relative;
     width: 40%;
 }
+
+.skills .content .col-left .btn{
+    position: relative;
+    margin-top: 50px;
+}
+
+/* minhas habilidades barra de porcentagem */
 
 .skills .content .col-right{
     position: relative;
@@ -366,82 +406,257 @@ div .curriculo {
 .skills .content .col-right .bar .html:before{
     width: 65%;
     background: #ff6347;
+    border-radius: 60px;
 }
 
 .skills .content .col-right .bar .css:before{
     width: 55%;
     background: #2aa9e0;
-} 
+    border-radius: 60px;
+}
 
 .skills .content .col-right .bar .javascript:before{
     width: 40%;
     background: #f7e018;
-}  
+    border-radius: 60px;
+}
 
 .skills .content .col-right .bar .reactjs:before{
     width: 25%;
     background:  #4ad5fe;
+    border-radius: 60px;
 }
+
 .skills .content .col-right .bar .mysql:before{
     width: 30%;
     background: #e48d00;
+    border-radius: 60px;
 }
+
 .skills .content .col-right .bar .github:before{
     width: 60%;
     background: #f05133;
+    border-radius: 60px;
 }
+
 .skills .content .col-right .bar .jquery:before{
     width: 25%;
     background: #0868ab;
+    border-radius: 60px;
 }
 
-.services .content{
+
+/*MINHAS TECNOLOGIAS*/
+
+
+.carrossel{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: -120px;
+    align-items: center;    
 }
 
-.title p{
+.carrossel span {
+    width: 40%;
+    height: 460px;
+    background-color: #eee;
+    padding:25px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.carrossel span h3 {
+    font-size: 1.7em;
     text-align: center;
-    font-size: 1.2em;
-    width: 100%;
+    margin: 3% 0;
+}
+.carrossel span p {
+    font-size: 1.3em;
+    margin-bottom: 3%;
 }
 
-.services .content .card{
-    background: #fff;
-    width: 340px;
-    margin: 10px;
-    padding: 25px;
+.slider{
+    border-radius: 10px;
+    margin: 0px auto 0px 0px;
+    width: 45%;
+    height: 460px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.2) ;
+    overflow: hidden;
+    background-color:rgba(205,205,205,0.2);
+}
+
+.slide{
+    width: 40%;   
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px auto;
+    width: 700%;
+    height: 400px;
+    transition: ease-in-out 1.5s;
+}
+
+.carrossel .card{
+    text-align: center;
+    position: relative;
+    background: #eee;
+    width: 100%;
+    margin: 10px 10px 0px 10px;
+    padding: 15px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
 }
 
-.services .content .card .service-icon{
+.card:hover{
+    background-color: #e9f1ee;
+    border-radius: 10px;
+}
+
+.carrossel .conteudo .card .service-icon{
     color: #3a6cf4;
-    font-size: 8em;
+    font-size: 7em;
     text-align: center;
     transition: transform 0.5s ease;
 }
 
-.services .content .card:hover .service-icon{
+.carrossel .conteudo .card:hover .service-icon{
     transform: translateY(-10px);
 }
 
-.services .content .card .info{
+.carrossel .conteudo .card .info{
     text-align: center;
 }
 
-.services .content .card .info h3{
+.text  h3{
+    text-align: center;
     color: #3a6cf4;
-    font-size: 1.2em;
+    font-size: 2em;
     font-weight: 700;
     margin: 10px;
 }
+
+.text p{
+    font-size: 1.2em;
+    font-weight: 500;
+    display: block;
+}
+
+
+.slides input{
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.navigation-manual{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    top: -15px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.manual-btn{
+    border: 2px solid #40d3dc;
+    padding: 10px;
+    border-radius: 20px ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.manual-btn:hover{
+    background-color: #40d3dc;
+    transition: 0.5s;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -200%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -300%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -400%;
+}
+
+#radio6:checked ~ .first {
+    margin-left: -500%;
+}
+
+#radio7:checked ~ .first {
+    margin-left: -600%;
+}
+
+.navigation-auto{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    top: 10px;
+    margin: auto;
+}
+
+.navigation-auto div {
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 20px;
+}
+
+#radio1:checked ~.navigation-auto .auto-btn1{
+    background-color: #40d3dc;
+}
+
+#radio2:checked ~.navigation-auto .auto-btn2{
+    background-color: #40d3dc;
+}
+
+#radio3:checked ~.navigation-auto .auto-btn3{
+    background-color: #40d3dc;
+}
+
+#radio4:checked ~.navigation-auto .auto-btn4{
+    background-color: #40d3dc;
+}
+
+#radio5:checked ~.navigation-auto .auto-btn5{
+    background-color: #40d3dc;
+}
+#radio6:checked ~.navigation-auto .auto-btn6{
+    background-color: #40d3dc;
+}
+#radio7:checked ~.navigation-auto .auto-btn7{
+    background-color: #40d3dc;
+}
+
+
+/*IMAGENS FUTURAS*/
 
 .work{
     background: #000016;
@@ -461,9 +676,9 @@ div .curriculo {
 }
 
 .work .content .card .card-img{
-    position: relative;   
+    position: relative;
     width: 100%;
-    height: 260px;
+    height: 200px;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -483,25 +698,32 @@ div .curriculo {
     transform: scale(1.2);
 }
 
+.work .btn{
+    margin-top: 10px;
+}
+
+/* meus contatos */
+/* 
 .contact .content{
-    display: flex;  
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 20px;
-}
+} */
 
 .contact .content .row{
-    display: flex;  
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-top: 40px;
+    
 }
 
 .contact .content .row .card{
     background: #fff;
-    width: 230px;
-    margin: 20px;
+    width: 240px;
+    margin: 10px;
     padding: 25px;
     display: flex;
     justify-content: center;
@@ -527,9 +749,9 @@ div .curriculo {
 
 .contact .content .row .card .info h3{
     color: #111;
-    font-size: 1.2em;   
+    font-size: 1em;
     font-weight: 700;
-    margin: 10px;
+    
 }
 
 .contact .content .row .card .info span{
@@ -541,6 +763,10 @@ div .curriculo {
     color: #666;
     font-weight: 500;
     text-decoration: none;
+}
+
+.contact .content .row .card .info span a:hover{
+    color: #aaa; 
 }
 
 .contact-form{
@@ -561,7 +787,7 @@ div .curriculo {
 }
 
 .contact-form .input-box{
-    position: relative; 
+    position: relative;
     width: 100%;
     margin-bottom: 20px;
 }
@@ -616,8 +842,8 @@ div .curriculo {
     color: #3a6cf4;
     font-weight: 600;
     text-decoration: none;
-    }
-    
+}
+
 @media(max-width:1290px){
 header{
     padding: 12px 20px;
@@ -662,7 +888,7 @@ header .navigation a:hover{
 }
 
 .menu-btn{
-   
+
     position: absolute;
     background: url(imgs/btn.png)no-repeat;
     background-size: 30px;
@@ -672,7 +898,7 @@ header .navigation a:hover{
     right: 0;
     margin: 0 20px;
     cursor: pointer;
-    transition: 0.3s ease; 
+    transition: 0.3s ease;
     filter: invert(1);
 }
 
@@ -686,7 +912,7 @@ header .navigation a:hover{
     right: 0;
     margin: 0 20px;
     cursor: pointer;
-    transition: 0.3s ease; 
+    transition: 0.3s ease;
     filter: invert(0);
 }
 
@@ -761,6 +987,7 @@ section{
     opacity: 1;
     pointer-events: auto;
 }
+
 #email{
     font-size: 14px;
     margin-left: -15px;

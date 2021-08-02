@@ -40,16 +40,35 @@ if(scrollBtn){
     });
 }
 
-//pagina 2
+
+// IMGENS NA PAGINA 2
+// TECNOLOGIA NA PAGINA 1
+
 var contar = 1;
+var crescente = true;
 setInterval(function () {
-var pos = document.getElementById('radio' + contar);
+    var pos = document.getElementById('radio' + contar);
 
-if(!pos) return;
+    if (!pos) return;
 
-pos.checked = true;
-contar++;
-if (contar > 5) {
-         contar = 1;
-        }
-}, 3000);
+    pos.checked = true;
+
+    if (crescente)
+        contar++;
+    else
+        contar--;
+
+    if (contar >= 7)
+        crescente = false;
+    if (contar <= 1)
+        crescente = true;
+
+}, 8000);
+
+function setPos(position) {
+    var pos = document.getElementById('radio' + position);
+
+    contar = position;
+    crescente = true;
+    pos.checked = true;
+}
