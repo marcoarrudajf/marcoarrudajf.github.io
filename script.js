@@ -58,12 +58,12 @@ setInterval(function () {
     else
         contar--;
 
-    if (contar >= 7)
+    if (contar >= 8)
         crescente = false;
     if (contar <= 1)
         crescente = true;
 
-}, 8000);
+}, 5000);
 
 function setPos(position) {
     var pos = document.getElementById('radio' + position);

@@ -26,7 +26,7 @@
             <a href="#main">Pagina Inicial</a>
             <a href="#about">Sobre Mim</a>
             <a href="#skills">Qualificações</a>
-            <a href="#services">Tecnologias</a>
+            <a href="#radio">Tecnologias</a>
             <a href="#gallery">Galeria</a>
             <a href="#contact">Contatos</a>
         </div>
@@ -46,6 +46,7 @@
                 <h3>ReactJs</h3>
                 <h3>MySql</h3>
                 <h3>JQuery</h3>
+                <h3>PHP</h3>
                 <h3>Web Developer</h3>
             </div>
             <a href="#curriculo" class="btn">Veja meu currículo</a>
@@ -87,8 +88,8 @@
                 <!-- <a href="index-pag2.html" class="btn">Veja Mais</a> -->
                 <a href="index-pag3.html" class="btn" target="_blank">Abrir Currículo</a>
 
-                <object class="curriculo" data="doc/marco-curriculo-20210801.pdf" type="application/pdf" width="100%"
-                    height="200">
+                <object class="curriculo" data="doc/marco-curriculo-20210917.pdf" type="application/pdf" width="100%"
+                    height="200px">
                     <p>Seu navegador não tem um plugin pra PDF</p>
                 </object>
             </div>
@@ -115,7 +116,7 @@
                 <div class="bar">
                     <div class="info">
                         <span>HTML</span>
-                        <span>65%</span>
+                        <span>85%</span>
                     </div>
                     <div class="line html"></div>
                 </div>
@@ -138,7 +139,7 @@
                 <div class="bar">
                     <div class="info">
                         <span>JavaScript</span>
-                        <span>40%</span>
+                        <span>55%</span>
                     </div>
                     <div class="line javascript"></div>
                 </div>
@@ -153,7 +154,7 @@
                 <div class="bar">
                     <div class="info">
                         <span>MySQL</span>
-                        <span>30%</span>
+                        <span>40%</span>
                     </div>
                     <div class="line mysql"></div>
                 </div>
@@ -164,22 +165,31 @@
                     </div>
                     <div class="line jquery"></div>
                 </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>PHP</span>
+                        <span>20%</span>
+                    </div>
+                    <div class="line php"></div>
+                </div>
             </div>
         </div>
 
-        <!-- Pagina quatro, contém um texto e divs com minhas experiencias alcançadas.
+        <!-- Pagina quatro, contém um texto e divs com as tecnologias alcançadas.
         Tambem tem um slide carrossel agora na linha horizontal. -->
 
     </section>
 
-    <section class="services" id="services">
+    <!-- <section class="services" id="services">
         <div class="title reveal">
             <h2 class="section-title">Tecnologias</h2>
         </div>
-    </section>
+    </section> -->
 
     <section class="carrossel" id="radio">
-
+        <div class="title reveal">
+            <h2 class="section-tecno">Tecnologias</h2>
+        </div>
         <div class='slider'>
             <div class='slides '>
 
@@ -190,6 +200,7 @@
                 <input type="radio" name="radio-btn" id="radio5">
                 <input type="radio" name="radio-btn" id="radio6">
                 <input type="radio" name="radio-btn" id="radio7">
+                <input type="radio" name="radio-btn" id="radio8">
 
                 <div class="conteudo slide first">
 
@@ -283,6 +294,19 @@
                             </p>
                         </div>
                     </div>
+                   
+                    <!-- PHP -->
+                    <div class="card reveal slide">
+                        <div class="service-icon">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <div class="text">
+                            <h3>PHP</h3>
+                            <p>Curso básico de PHP, aulas online realizadas no período de 40 horas, realizado por CURSO EM VÍDEO
+                                treinamento acompanhado com supervisão de pessoas da área.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -294,6 +318,7 @@
                     <div class='auto-btn5'></div>
                     <div class='auto-btn6'></div>
                     <div class='auto-btn7'></div>
+                    <div class='auto-btn8'></div>
                 </div>
                 <div class='navigation-manual'>
                     <label for='radio1' class='manual-btn' onclick="setPos(1)"></label>
@@ -303,17 +328,18 @@
                     <label for='radio5' class='manual-btn' onclick="setPos(5)"></label>
                     <label for='radio6' class='manual-btn' onclick="setPos(6)"></label>
                     <label for='radio7' class='manual-btn' onclick="setPos(7)"></label>
+                    <label for='radio8' class='manual-btn' onclick="setPos(8)"></label>
                 </div>
             </div>
 
         </div>
-        <span>
+        <div class="txtinfo">
             <h3>informações Importantes:</h3>
             <p>Estas são as tecnologias que estou estudando e treinando no momento.</p>
             <p>Treinamento feito em aulas online, com pesquisas e supervisão de amigos.</p>
-            <p>Comecei pelo HTML5, depois na sequência estudei CSS3, JavaScript, Git e GitHub, ReactjS, MySQL e JQuery.</p>
-            <p>Continuo firme estudando, buscando uma oportunidade para aperfeiçoar minhas técnicas em programação.</p>
-        </span>
+            <p>Comecei pelo HTML5, depois na sequência estudei CSS3, JavaScript, Git e GitHub, ReactjS, MySQL, JQuery e PHP.</p>
+            <p>Continuo firme estudando, buscando uma oportunidade de trabalho para aperfeiçoar minhas técnicas em programação.</p>
+        </div>
     </section>
 
     <!--  Pagina 5: Algumas imagens como exemplo, estarei colocando aqui minha imagens futuras de programador -->

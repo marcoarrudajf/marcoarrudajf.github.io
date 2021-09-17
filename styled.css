@@ -57,49 +57,58 @@ section{
 }
 
 .animation-text h3:nth-child(1){
-    animation: text-move 15s infinite;
+    animation: text-move 20s infinite;
 }
 @keyframes text-move{
 0%{
     margin-top: 0;
     }
-7%{
+6%{
     margin-top: -70px;
     }
-14%{
+12%{
     margin-top: -140px;
     }
-21%{
+18%{
     margin-top: -210px;
     }
-28%{
+24%{
     margin-top: -280px;
     }
-35%{
+30%{
     margin-top: -340px;
     }
-42.5%{
+36%{
     margin-top: -410px;
     }
-50%{
+42%{
     margin-top: -480px;
     }
-57.5%{
+48%{
+    margin-top: -540px;
+    }
+52%{
+    margin-top: -540px;
+    }
+58%{
+    margin-top: -480px;
+    }
+64%{
     margin-top: -410px;
     }
-63%{
+70%{
     margin-top: -340px;
     }
-70%{
+76%{
     margin-top: -280px;
     }
-77%{
+82%{
     margin-top: -210px;
     }
-83%{
+88%{
     margin-top: -140px;
     }
-90%{
+94%{
     margin-top: -70px;
     }
 100%{
@@ -226,7 +235,40 @@ header.sticky .navigation a:hover{
     font-size: 2.2em;
     font-weight: 800;
     text-align: center;
-    
+   
+}
+.section-tecno{
+   
+   margin-bottom: 50px;
+   position: relative;
+   color:#3a6cf4;
+   font-size: 2.2em;
+   font-weight: 800;
+   text-align: center;
+     
+}
+.section-tecno::before{
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    width: 140px;
+    height: 4px;
+    background: #3a6cf4;
+    transform:translate(-50%);
+     
+}
+.section-tecno::after{
+    content: "";
+    position: absolute;
+    top:50px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #3a6cf4;
+    transform: translate(-50%);
+     
 }
 
 .section-title:before{
@@ -404,7 +446,7 @@ div .curriculo {
 }
 
 .skills .content .col-right .bar .html:before{
-    width: 65%;
+    width: 85%;
     background: #ff6347;
     border-radius: 60px;
 }
@@ -416,7 +458,7 @@ div .curriculo {
 }
 
 .skills .content .col-right .bar .javascript:before{
-    width: 40%;
+    width: 55%;
     background: #f7e018;
     border-radius: 60px;
 }
@@ -428,7 +470,7 @@ div .curriculo {
 }
 
 .skills .content .col-right .bar .mysql:before{
-    width: 30%;
+    width: 40%;
     background: #e48d00;
     border-radius: 60px;
 }
@@ -445,6 +487,12 @@ div .curriculo {
     border-radius: 60px;
 }
 
+.skills .content .col-right .bar .php:before{
+    width: 20%;
+    background: #04025f;
+    border-radius: 60px;
+}
+
 
 /*MINHAS TECNOLOGIAS*/
 
@@ -452,12 +500,12 @@ div .curriculo {
 .carrossel{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: -120px;
-    align-items: center;    
+    align-items: center;   
+    background: #fff;
+    
 }
 
-.carrossel span {
+.carrossel .txtinfo {
     width: 40%;
     height: 460px;
     background-color: #eee;
@@ -468,13 +516,13 @@ div .curriculo {
    
 }
 
-.carrossel span h3 {
-    font-size: 1.7em;
+.carrossel .txtinfo h3 {
+    font-size: 2vw;
     text-align: center;
     margin: 3% 0;
 }
-.carrossel span p {
-    font-size: 1.3em;
+.carrossel .txtinfo p {
+    font-size: 1.1vw;
     margin-bottom: 3%;
 }
 
@@ -489,14 +537,14 @@ div .curriculo {
 }
 
 .slide{
-    width: 40%;   
+    width: 40%;  
 }
 
 .conteudo{
     display: flex;
     flex-direction: row;
     margin-top: 50px auto;
-    width: 700%;
+    width: 800%;
     height: 400px;
     transition: ease-in-out 1.5s;
 }
@@ -558,7 +606,7 @@ div .curriculo {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 300px;
+    width: 350px;
     top: -15px;
     margin: auto;
     cursor: pointer;
@@ -604,16 +652,18 @@ div .curriculo {
 #radio6:checked ~ .first {
     margin-left: -500%;
 }
-
 #radio7:checked ~ .first {
     margin-left: -600%;
+}
+#radio8:checked ~ .first {
+    margin-left: -700%;
 }
 
 .navigation-auto{
     position: relative;
     display: flex;
     justify-content: center;
-    width: 300px;
+    width: 350px;
     top: 10px;
     margin: auto;
 }
@@ -652,6 +702,9 @@ div .curriculo {
     background-color: #40d3dc;
 }
 #radio7:checked ~.navigation-auto .auto-btn7{
+    background-color: #40d3dc;
+}
+#radio8:checked ~.navigation-auto .auto-btn8{
     background-color: #40d3dc;
 }
 
@@ -703,13 +756,6 @@ div .curriculo {
 }
 
 /* meus contatos */
-/* 
-.contact .content{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-} */
 
 .contact .content .row{
     display: flex;
