@@ -72,3 +72,4 @@ function setPos(position) {
     crescente = true;
     pos.checked = true;
 }
+
